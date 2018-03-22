@@ -15,7 +15,6 @@ const words = [
 var randNum = Math.floor(Math.random() * words.length);
 var chooseWords = words[randNum];
 var spaces = [];
-var blanksAndSuccesses = [];
 console.log(chooseWords);
 
 // let docSpaces = document.getElementById('spaces');
@@ -26,12 +25,14 @@ var generateSpaces = () => {
   }
   return spaces;
 }
-console.log(generateSpaces());
+ var blanks = document.querySelector("#spaces")
+ blanks.innerHTML = generateSpaces()
 
 document.addEventListener('keypress', (event) => {
   var keyword = String.fromCharCode(event.keyCode);
   // console.log(chooseWords.indexOf(keyword)); 
   if(chooseWords.indexOf(keyword) > -1) {
+
     // console.log(true);
   }
   // console.log(keyword);
@@ -39,4 +40,3 @@ document.addEventListener('keypress', (event) => {
   console.log(spaces);
 });
 
-generateSpaces();
