@@ -1,0 +1,21 @@
+body {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+header {
+	height: 300px;
+	border:1px solid black;
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: transparent;
+}
+
+#spaces {
+	height: 150px;
+	border:1px solid black;
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 100px;
+	border-top: transparent;
+}
